@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About the Author</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -18,18 +18,44 @@
     </nav>
   </header>
 
-  <main>
-    <h2>About Me</h2>
-    <img src="./images/profile.png" alt="Author photo" />
-    <p>Hello! I'm Jane Doe, a passionate web developer and blogger. I love creating websites, writing about tech, and helping others learn.</p>
-    <p>In my spare time, I enjoy reading, coding challenges, and exploring the outdoors.</p>
+  <div class="layout-2col">
+    <div id="main-content" class="main">
+      <section>
+        <h2>About Me</h2>
+        <img src="./images/profile.png" alt="Author photo" class="image-float" />
+        <p class="caption">Jane Doe, Web Developer & Blogger</p>
+        <p>
+          Hello! I'm <strong>Jane Doe</strong>, a passionate web developer and blogger. I love creating beautiful, responsive websites, writing about technology, and helping others learn to code. My journey began in middle school, and since then I’ve built countless projects and continue to learn every day.
+        </p>
+        <p>
+          In my spare time, you’ll often find me hiking trails, capturing photos of nature, or curled up with a good book and a cup of coffee. I also enjoy solving coding challenges and experimenting with new frameworks and tools.
+        </p>
+      </section>
 
-    <h3>Fun Facts</h3>
-    <ul>
-      <li>I built my first website at age 12.</li>
-      <li>I have a cat named Pixel.</li>
-      <li>I love hiking and trail photography.</li>
-    </ul>
-  </main>
+      <section>
+        <h3>Fun Facts About Me</h3>
+        <ul>
+          <li>I built my first website at age 12.</li>
+          <li>I have a cat named Pixel who loves to nap on my keyboard.</li>
+          <li>I love trail photography and outdoor adventures.</li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">The Joy of Learning Web Development</a></li>
+        <li><a href="#">Why You Should Start Journaling</a></li>
+        <li><a href="#">Subscribe to Our Newsletter</a></li>
+      </ul>
+
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Blog Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </aside>
+  </div>
 </body>
 </html>

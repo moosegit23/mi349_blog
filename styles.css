@@ -1,0 +1,207 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #005fa3;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #004c82;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #0077cc;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Class selector example */
+.highlight {
+  background-color: yellow;
+  font-style: italic;
+}
+
+/* ID selector example */
+#main-content {
+  padding: 20px;
+  border-left: 3px solid #0077cc;
+}
+
+/* Two-column Flexbox layout */
+.layout-2col {
+  display: flex;
+  gap: 20px;
+}
+
+.layout-2col .main {
+  flex: 2;
+}
+
+.layout-2col .sidebar {
+  flex: 1;
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Floated image with caption */
+.image-float {
+  float: right;
+  margin: 10px 0 10px 20px;
+  max-width: 300px;
+}
+
+.caption {
+  font-size: 0.9em;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .layout-2col {
+    flex-direction: column;
+  }
+
+  .image-float {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+}
